@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from blockchain import urls
+from flask_bc import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blockchain/',include('blockchain.urls'),name="blockchain")
+    path('blockchain/',include('blockchain.urls'),name="blockchain"),
+    path('flask/',include('flask_bc.urls'),name="flask_bc"),
 
 ]

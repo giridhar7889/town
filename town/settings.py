@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blockchain'
+    'blockchain',
+    'rest_framework',
+
 ]
 
 MIDDLEWARE = [
